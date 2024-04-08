@@ -59,6 +59,7 @@ header > .interface{
 }
 .logo a img{
     width: 100px;
+    border-radius:50%;
 }
 header a{
     color: #5c5c5c;
