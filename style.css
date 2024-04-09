@@ -351,6 +351,10 @@ footer .line-footer p{
     display: flex;
     align-items: center;
 }
+.logo-footer img{
+width: 100px;
+    border-radius:50%;
+}
 .logo-footer h1{
     margin-left: -15px;
 }
