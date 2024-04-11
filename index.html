@@ -10,10 +10,21 @@
     </head>
     <body>
         <header>
+            <!--<button class="abrir">abrir</button>--><i class="bi bi-list abrir"></i>
+            <nav class="sidebar">
+                <ul>
+                   <!--<button class="fechar">X</button> --><li><i class="bi bi-x-circle-fill fechar"></i>
+                    </li>
+                        <li><a href="#topo-do-site"><i class="bi bi-house-fill ini"></i>Início</a></li>
+                        <li><a href="#especialidades"><i class="bi bi-tools"></i>Especialidades</a></li>
+                        <li><a href="#sobre"><i class="bi bi-file-person-fill"></i>Sobre</a></li>
+                        <li><a href="#portfolio"><i class="bi bi-sign-railroad-fill"></i>Projetos</a></li>
+                    </ul>
+            </nav>
             <div class="interface">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="1.png" alt="Logo" /><h1>Cláudio Tech</h1>
+                        <img src="1.png" alt="Logo" /><h1 style="font-size:30px;">Cláudio Tech</h1>
                     </a>
                 </div>
                 <nav class="menu-desktop">
@@ -103,14 +114,15 @@
                 <div class="interface">
                     <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                     <div class="flex">
-                        <div class="img-port" style="background-image: url(Captura\ da\ Web_4-4-2024_1405_.jpeg);">
-                        <div class="overlay">Projeto 1</div>
-                        </div>
-                        <div class="img-port" style="background-image: url(Captura\ da\ Web_4-4-2024_1405_.jpeg);">
-                            <div class="overlay">Projeto 2</div>
-                        </div>
-                        <div class="img-port" style="background-image: url(Captura\ da\ Web_4-4-2024_1405_.jpeg);">
-                            <div class="overlay">Projeto 3</div>
+                        <div class="card" data-title="Full Stack Developer">
+      <p>
+       Eu sou o Cláudio Tech, estudante na área de TI aprofundando os conhecimentos em Linguagens de programação.
+      </p>
+      <p>
+        Para realizar a minhas tarefas utilizo as seguintes linguagens e tecnologias: HTML5, CSS3, JAVASCRIPT, PHP, MYSQL, SQL, MONGODB, REACT JS, REACT NATIVE, NODE JS, KOTLIN e PYTHON.
+      </p>
+      <p><a href="jogo.html">Ver Alguns Projectos</a></p>
+    </div>
                         </div>
                     </div>
                 </div>
@@ -155,10 +167,28 @@
 
 
         <script>
-            document.querySelector('.ini').addEventListener('click',()=>{
-                //document.querySelector('html').style.scroll-margin-top = '0';~
-                console.log("Clicou")
+            document.querySelector('.abrir').addEventListener('click',()=>{
+                    document.querySelector('.sidebar').style.left = "0px"
+                    document.querySelector('.abrir').style.display = "none"
+                     document.querySelector('.sidebar').style.display = "block"
+                
             })
+            //
+            
+            
+            
+            
+            
+            
+             document.querySelector('.fechar').addEventListener('click',()=>{
+                    document.querySelector('.sidebar').style.left = "-250px"
+                     document.querySelector('.sidebar').style.display = "none"
+                     document.querySelector('.abrir').style.display = "block"
+                      
+                
+            })
+            
         </script>
     </body>
-</html>
+                                                                                                  </html>
+    
