@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  width: 100vh;
+}
+.games{
+    margin-bottom: 20px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    width: 100%;
+    height: 40px;
+    box-shadow: 2px 0px 2px black;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*    header   */
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+header img{
+    margin-left: 7px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/*   folder1    */
+.folder1{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+.folder1 .img{
+    height: 70%;
+    border: 1px solid black;
+    border-radius: ;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+.folder1 .text{
+    height: 30%;
+    border: 1px solid black;
+    background-color: #ACFFD2;
+     border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+.folder1 .jogo-da-velha{
+    background-image: url('./jogo_da_velha.jpg');
+    background-size: cover;
+}
+.folder1 .text h1{
+    text-align: center;
+}
+.folder1 .text button{
+    width: 100%;
+    height: 38px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background: orange;
+    transition: 2s;
+}
+.folder1 .text button:hover{
+    background-color: #FF0300;
+}
+
+
+
+/*   folder2    */
+.folder2{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+.folder2 .img{
+    height: 70%;
+    border: 1px solid black;
+    border-radius: ;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+.folder2 .text{
+    height: 30%;
+    border: 1px solid black;
+    background-color: #ACFFD2;
+     border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+.folder2 .leitor{
+    background-image: url('./print2.png');
+    background-size: cover;
+}
+.folder2 .text h1{
+    text-align: center;
+}
+.folder2 .text button{
+    width: 100%;
+    height: 38px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background: orange;
+    transition: 2s;
+}
+.folder2 .text button:hover{
+    background-color: #FF0300;
+}

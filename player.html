@@ -1,0 +1,76 @@
+<!-- Desenvolvido por Leonel Miguins, 2023 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="icon.png">
+    
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="leitor.css" rel="stylesheet">
+    <script src="player.js"></script>  
+    <title>LPlayer</title>
+</head>
+<body>
+    <!-- Menu da barra de navegação superior-->
+    <nav class="menu-nav">
+        <a href="jogo.html" style="text-decoration:none;color:white;width:30px;height:30px;margin-right:-10px;"><i class="bi bi-arrow-left-circle-fill"></i></a>
+        <div class="circle"style=""></div> 
+            <label>CPLAYER</label>
+        <div class="menu-nav-social">
+            <img src="github.png" onclick="window.open('https://github.com/12-ClaudioGustavo/Curso-de-HTML-CSS-e-JavaScript-')">
+            <img src="linkedin.png" onclick="window.open('https://www.linkedin.com/in/claudiogustavo)">
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!-- Player em fullscreen que fica oculto-->
+
+    <h3>Playlist & Albuns</h3>
+    <!-- Cards das músicas: Os albuns seram escritos aqui via DOM -->
+    <div class="conteiner-cards"></div>
+    <br>
+    <br>
+    <br>
+    <!-- Menu do player na parte inferiror do site-->
+    <div class="menu-player">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+           <audio id="audio" src="click.mp3" autoplay></audio>
+          <div class="menu-player-center">
+                
+          </div>
+     
+          <div class="menu-player-left">
+            <img id="menu-player-img" src="./banner.png" alt="foto da musica">
+                <div class="menu-player-dados">
+                    <span class="menu-text-titulo" id="player-title">Titulo</span><br>
+                    <span class="menu-text-banda" id="player-band">Banda</span><br>
+                        <div>
+                           <span id="player-current-duration">00:00</span>
+                           <span style="color: rgb(196, 190, 190);" id="player-duration">00:00</span><br>
+                        </div>
+                        <div class="menu-player-volume">
+                            <img src="volume.png">
+                            <input class="volume" type="range" id="controleVolume" min="0" max="1" step="0.1" value="1" onchange="controlVolume()"> 
+                       </div>
+                    
+                </div>
+          </div>
+
+          <div class="menu-player-right">
+
+              <div class="menu-player-btns">
+                   <img src="prev.png" onclick="prevMusic()">
+                   <img id="btn-play" src="play.png" onclick="playMusic()">
+                   <img id="btn-pause" src="pause.png" onclick="pauseMusic()">
+                   <img src="next.png" onclick="nextMusic()">
+                   <img class="download" src="download.png" onclick="musicDownload();">
+              </div>
+         </div>
+    </div>
+</body>
+</html>
