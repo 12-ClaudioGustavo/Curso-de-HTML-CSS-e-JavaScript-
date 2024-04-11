@@ -39,9 +39,9 @@ body{
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -400px;
     background-color: rgba(0,0,0,0.5);
-    width: 250px;
+    width: 400px;
 
     
 }
@@ -54,6 +54,7 @@ body{
     position: fixed;
     top: 0;
     left: 250px;
+    font-size:23px;
     background-color: rgba(0,0,0,0.5);
     width: 250px;
     transition: 2s;
@@ -73,7 +74,7 @@ body{
 }
 .sidebar ul li i{
     color: cyan;
-    font-size: 17px;
+    font-size: 23px;
 }
 .interface{
     max-width: 1280px;
@@ -290,8 +291,8 @@ section.portfolio .flex{
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
   background: linear-gradient(to right, #ec2f4b, #009fff);
-  /*width: clamp(20rem, 25rem, 30rem);*/
-  width: 100%;
+  width: clamp(20rem, 25rem, 30rem);
+ /* width: 100%;*/
   border-radius: 0.5rem;
   color: #f3f3f3;
 }
@@ -306,8 +307,8 @@ section.portfolio .flex{
   position: absolute;
   top: calc(var(--space) / 2);
   left: calc(var(--space) 2);
-  /*width: calc(100% - var(--space));*/
-  width: 90%;
+  width: calc(100% - var(--space));
+  /*width: 90%;*/
   height: calc(100% - var(--space));
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 1.5rem;
