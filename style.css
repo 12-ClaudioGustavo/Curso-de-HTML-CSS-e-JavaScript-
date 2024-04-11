@@ -292,8 +292,8 @@ section.portfolio .flex{
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
   background: linear-gradient(to right, #ec2f4b, #009fff);
-  width: clamp(20rem, 25rem, 30rem);
- /* width: 100%;*/
+  /*width: clamp(20rem, 25rem, 30rem);*/
+ width: 100%;
   border-radius: 0.5rem;
   color: #f3f3f3;
 }
