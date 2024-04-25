@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
 });
 
 function writeAlbuns() {
-  fetch('https://raw.githubusercontent.com/leonelmiguins/L-player/main/json/music.json')
+  fetch('./music.json')
   .then(response => response.json())
   .then( data => {
 
